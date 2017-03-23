@@ -6,8 +6,13 @@ public class WebService{
 	String hello(){ 
 
 		JSONObject obj = new JSONObject();
+<<<<<<< HEAD
         obj.put("nome", "Benedito da silva");
         obj.put("idade", new Integer(100));
+=======
+        obj.put("name", "mario");
+        obj.put("age", new Integer(100));
+>>>>>>> ab59abc6078297f81aa0628cff839fdb9ffd07be
 
         JSONArray contas = new JSONArray();
         JSONArray conta = new JSONArray();
