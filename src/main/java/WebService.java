@@ -6,7 +6,7 @@ public class WebService{
 	String hello(){ 
 
 		JSONObject obj = new JSONObject();
-        obj.put("name", "mkyong.com");
+        obj.put("name", "mario");
         obj.put("age", new Integer(100));
 
         JSONArray list = new JSONArray();
