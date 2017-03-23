@@ -6,15 +6,20 @@ public class WebService{
 	String hello(){ 
 
 		JSONObject obj = new JSONObject();
-        obj.put("name", "mkyong.com");
-        obj.put("age", new Integer(100));
+        obj.put("nome", "Benedito da silva");
+        obj.put("idade", new Integer(100));
 
-        JSONArray list = new JSONArray();
-        list.add("msg 1");
-        list.add("msg 2");
-        list.add("msg 3");
+        JSONArray contas = new JSONArray();
+        JSONArray conta = new JSONArray();
 
-        obj.put("messages", list);
+        conta.add("valor : 250,00");
+        conta.add("vencimento : 25/12/2011");
+        contas.add(conta);
+
+        contas.add("outra conta");
+        contas.add("mais uma conta");
+
+        obj.put("contas", list);
        
 		return obj.toJSONString().toString();
 	};
