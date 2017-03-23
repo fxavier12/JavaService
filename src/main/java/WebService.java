@@ -23,7 +23,7 @@ public class WebService{
         contas.add("outra conta");
         contas.add("mais uma conta");
 
-        obj.put("contas", list);
+        obj.put("contas",contas);
        
 		return obj.toJSONString().toString();
 	};
